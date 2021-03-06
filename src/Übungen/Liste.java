@@ -41,8 +41,6 @@ public class Liste {
     }
 
     public void getAufgabeIndex(String description){
-        //Wenn es das Objekt gibt, dann Index des Objektes in den tasks zurückgeben,
-        //Wenn es das Objekt nicht gibt, dann -1 als "Index" zurückgeben.
         for (int i=0; i<tasks.size();i++) {
             if (tasks.get(i).getDescription().equals(description)) {
                 System.out.println("Die gesuchte Aufgabe befindet sich an Index: " + i + " in der ToDoListe '" + this.name + "'.");
@@ -52,6 +50,15 @@ public class Liste {
             }
         }
     }
+
+    /*
+
+
+    Binäre suche: TODO
+
+
+     */
+
 
     public String toString()
     {

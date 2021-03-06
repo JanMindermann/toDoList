@@ -30,6 +30,25 @@ public class Liste {
         tasks.remove(aufgabe);
     }
 
+    public ArrayList<Aufgabe> getAufgabe(String description){
+        ArrayList<Aufgabe> aufgaben = new ArrayList<>();
+        for(Aufgabe task:tasks){
+            if(task.getDescription().equals(description)){
+                aufgaben.add(task);
+            }
+        }if(aufgaben.size()>0){return aufgaben;}
+        else{ System.out.println("Keine Aufgabe mit der Beschreibung '"+description+"' gefunden.");return null;}
+    }
+
+    public void getAufgabeIndex(String description){
+        //Wenn es das Objekt gibt, dann Index des Objektes in den tasks zurückgeben,
+        //Wenn es das Objekt nicht gibt, dann -1 als "Index" zurückgeben.
+        for(Aufgabe task:tasks){
+            if (task.getDescription().equals(description)){
+
+            }
+        }
+    }
 
     public String toString()
     {

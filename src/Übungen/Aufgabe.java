@@ -1,4 +1,5 @@
 package Übungen;
+import java.awt.image.AreaAveragingScaleFilter;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 
@@ -6,14 +7,17 @@ public class Aufgabe {
     private String description;
     private LocalDateTime todoUntil;
     private Priority priotrity;
-    private ArrayList<Tag> tags;
+    private ArrayList<Tag> tags = new ArrayList<>();
 
-   /* public Aufgabe(String description, LocalDateTime todoUntil, Priority priority){
-        this.description=description;
-        this.todoUntil= todoUntil;
-        this.priotrity=priority;
+    public void setTag(Tag tag){
+        this.tags.add(tag);
+    }
+
+    /*public Tag getTags(){
+        for(Tag tag:tags){
+
+        }
     }*/
-
 
     public String getDescription()
     {
@@ -45,6 +49,6 @@ public class Aufgabe {
 
     public String toString()
     {
-        return "Die Aufgabe: "+ this.description + " soll bis zum "+ this.todoUntil +" erledigt werden.";
+        return  this.description + ": Priorität " + this.priotrity + " mit (" + tags.size() +" Tags)";
     }
 }

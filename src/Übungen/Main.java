@@ -46,6 +46,7 @@ public class Main {
 
         System.out.println(l1);
 
-        System.out.println(l1.getAufgabe("Job d"));
+        System.out.println(l1.getAufgabe("Job suchen"));
+        l1.getAufgabeIndex("Job suchen");
     }
 }

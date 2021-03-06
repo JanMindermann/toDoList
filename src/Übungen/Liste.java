@@ -25,6 +25,11 @@ public class Liste {
     {
         tasks.add(aufgabe);
     }
+    public void removeAufgabe(Aufgabe aufgabe)
+    {
+        tasks.remove(aufgabe);
+    }
+
 
     public String toString()
     {

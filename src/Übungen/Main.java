@@ -1,6 +1,6 @@
 package Übungen;
 
-public class TodoList {
+public class Main {
 
     public static void main(String[] args) {
 
@@ -13,15 +13,20 @@ public class TodoList {
         // Aufgaben hinzufügen.
         Aufgabe a1 = new Aufgabe();
         a1.setDescription("Im Lotto gewinnen");
+        a1.setPriority(Priority.VERY_HIGH);
+
 
         Aufgabe a2 = new Aufgabe();
         a2.setDescription("Dem Chef auf den Tisch ka...");
+        a1.setPriority(Priority.COMMON);
 
         Aufgabe a3 = new Aufgabe();
         a3.setDescription("Geld ausgeben");
+        a1.setPriority(Priority.LOW);
 
         Aufgabe a4 = new Aufgabe();
         a4.setDescription("Job suchen");
+        a1.setPriority(Priority.VERY_LOW);
 
         l1.addAufgabe(a1);
         l1.addAufgabe(a2);

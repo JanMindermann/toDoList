@@ -1,10 +1,12 @@
 package Übungen;
 import java.time.LocalDateTime;
+import java.util.ArrayList;
 
 public class Aufgabe {
     private String description;
     private LocalDateTime todoUntil;
     private Priority priotrity;
+    private ArrayList<Tag> tags;
 
    /* public Aufgabe(String description, LocalDateTime todoUntil, Priority priority){
         this.description=description;

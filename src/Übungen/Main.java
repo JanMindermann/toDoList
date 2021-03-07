@@ -46,7 +46,11 @@ public class Main {
 
         System.out.println(l1);
 
-        System.out.println(l1.getAufgabe("Job suchen"));
+        System.out.println(l1.getAufgabe("e"));
         l1.getAufgabeIndex("Job suchen");
+
+
+        System.out.println("---------------------------");
+        l1.getAufgabenPriority(Priority.HIGH);
     }
 }

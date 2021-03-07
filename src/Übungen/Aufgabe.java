@@ -13,11 +13,10 @@ public class Aufgabe {
         this.tags.add(tag);
     }
 
-    /*public Tag getTags(){
-        for(Tag tag:tags){
 
-        }
-    }*/
+    public Tag getTag(){
+        return this.tags.get(0);
+    }
 
     public String getDescription()
     {

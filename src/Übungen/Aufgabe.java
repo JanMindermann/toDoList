@@ -7,7 +7,7 @@ public class Aufgabe {
     private String description;
     private LocalDateTime todoUntil;
     private Priority priotrity;
-    private ArrayList<Tag> tags = new ArrayList<>();
+    public ArrayList<Tag> tags = new ArrayList<>();
 
     public void setTag(Tag tag){
         this.tags.add(tag);

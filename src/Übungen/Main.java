@@ -52,5 +52,6 @@ public class Main {
 
         System.out.println("---------------------------");
         l1.getAufgabenPriority(Priority.HIGH);
+        l1.getAufgabenMitTags(freizeit);
     }
 }

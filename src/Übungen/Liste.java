@@ -65,6 +65,17 @@ public class Liste {
         }
     }*/
 
+    public void getAufgabenMitTags(Tag tag){
+        ArrayList<Aufgabe>aufgabenMitTags=new ArrayList<>();
+        for(Aufgabe task:tasks){
+            for(int i=0; i<task.tags.size();i++){
+                if(task.tags.get(i)==tag){
+                    aufgabenMitTags.add(task);
+                }
+            }
+        }System.out.println(aufgabenMitTags.size());
+    }
+
 
     public void getAufgabenPriority(Priority priority) {
         ArrayList<Aufgabe> tasksWithPriortiy = new ArrayList<>();
